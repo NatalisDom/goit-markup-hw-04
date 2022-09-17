@@ -4,7 +4,7 @@
 /* акцент блакитний #2196F3 */
 /* акцент чорний у логотипі #000000 */
 /* акцент білий,контакти у футорі прозорість 60% rgba(255, 255, 255, 0.6) */
-/* Вторинний колір фону #2F303A; */
+/* Вторинний колір фону #2F303A; rgba(47, 48, 58, 0.4); */
 /* Колір первінной кнопки #188CE8 */
 /* Колір вторинних кнопок #F5F4FA*/
 
@@ -12,7 +12,8 @@
 :root {
   --primary-text-color: #757575;
   --primary-white-color: #ffffff;
-  --second-background-color: #2f303a;
+  --second-background-color: #2F303A;
+  --img-overlay-color: rgba(47, 48, 58, 0.4);
   --title-text-color: #212121;
   --accent-text-color: #2196f3;
   --accent-contact-color: rgba(255, 255, 255, 0.6);
@@ -48,6 +49,7 @@ ul {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+  
 }
 
 /* Загальний контейнер контенту */
@@ -79,6 +81,10 @@ body {
 }
 .auth-nav {
   display: flex;
+  align-items: center;
+  
+  
+  
 }
 .logo {
   display: inline-block;
@@ -152,10 +158,39 @@ body {
   line-height: 1, 14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  
 }
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: var(--accent-text-color);
+}
+
+.icon-envelope::before {
+  display: inline-block;
+  content: "";
+  background-image: url("../images/icon/envelope.svg");
+  width: 16px;
+  height: 12px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 2px;
+  margin-right: 10px;
+  
+}
+
+.icon-smartphone::before {
+  display: inline-block;
+  content: "";
+  background-image: url("../images/icon/smartphone.svg");
+  width: 10px;
+  height: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
+  
+  
 }
 
 /* Секция герой, hero */
@@ -163,8 +198,24 @@ body {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: var(--second-background-color);
+  background-color: #C4C4C4;
+
+  background-image:
+  linear-gradient(
+  var(--img-overlay-color), 
+  var(--img-overlay-color) ),  
+  url('../images/studio/hat.jpg');
+
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
 }
+
+
 .hero-title {
   text-align: center;
   margin: 0 auto;
@@ -216,6 +267,40 @@ body {
   flex-wrap: wrap;
   margin-right: -30px;
 }
+.item-feature::before {
+  display: block;
+  content:"";
+  height: 120px;
+  background-color: var(--second-button-color);
+  
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+
+}
+/* 
+.item-feature:nth-child(1)::before {
+  background-image: url("../images/");
+}  */
+
+.icone-antenna::before {
+  background-image: url("../images/icon/icon-img/antenna.svg");
+}
+.icone-clock::before {
+  background-image: url("../images/icon/icon-img/clock.svg");
+  
+}
+.icone-diagram::before {
+  background-image: url("../images/icon/icon-img/diagram.svg");
+}
+.icone-astronaut::before {
+  background-image: url("../images/icon/icon-img/astronaut.svg");
+} 
+
+
+  
+
 
 .item-feature {
   flex-basis: calc(100% / 4 - 30px);
@@ -277,6 +362,7 @@ body {
   flex-wrap: wrap;
   margin-right: -30px;
   margin-top: 50px;
+ 
 }
 
 .item-team {
@@ -292,6 +378,30 @@ body {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+/* Постійні клієнти. regular-customers  */
+.section-title {
+  /* padding-top: 94px; */
+}
+.customers-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.coustomers-item,
+.link-customers {
+  display: inline-block;
+  width: 170px;
+  height: 92px;
+  
+}
+.company1-icon {
+  width: 106px;
+  height: 60px;
+  
 }
 
 /* footer */
