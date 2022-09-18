@@ -397,43 +397,44 @@ body {
   display: inline-block;
   width: 170px;
   height: 92px;
-  align-items: center;
+  /* align-items: center; */
   
 }
 .icon-company1 {
   width: 106px;
   height: 60px;
+  object-position: 50% 50%;
  
 }
 
 .icon-company2 {
   width: 106px;
   height: 60px;
- 
+  object-position: 50% 50%;
 }
 
 .icon-company3 {
   width: 106px;
   height: 60px;
- 
+  object-position: 50% 50%;
 }
 
 .icon-company4 {
   width: 106px;
   height: 60px;
- 
+  object-position: 50% 50%;
 }
 
 .icon-company5 {
   width: 106px;
   height: 60px;
- 
+  object-position: 50% 50%;
 }
 
 .icon-company6 {
   width: 93.79px;
   height: 43.93px;
- 
+  object-position: 50% 50%;
 }
 
 /* footer */
