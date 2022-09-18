@@ -389,7 +389,7 @@ body {
   flex-wrap: wrap;
   gap: 30px;
   margin-top: 50px;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .coustomers-item,
@@ -397,7 +397,8 @@ body {
   display: inline-block;
   width: 170px;
   height: 92px;
-  /* align-items: center; */
+  /* background-position: center; */
+  align-items: center;
   
 }
 .icon-company1 {
