@@ -389,6 +389,7 @@ body {
   flex-wrap: wrap;
   gap: 30px;
   margin-top: 50px;
+  align-items: center;
 }
 
 .coustomers-item,
@@ -398,10 +399,40 @@ body {
   height: 92px;
   
 }
-.company1-icon {
-  width: 106px;
-  height: 60px;
-  
+.icon-company1 {
+  width: 41px;
+  height: 46.7px;
+ 
+}
+
+.icon-company2 {
+  width: 40px;
+  height: 52px;
+ 
+}
+
+.icon-company3 {
+  width: 43.46px;
+  height: 41.18px;
+ 
+}
+
+.icon-company4 {
+  width: 84.44px;
+  height: 40.62px;
+ 
+}
+
+.icon-company5 {
+  width: 62.54px;
+  height: 45.43px;
+ 
+}
+
+.icon-company6 {
+  width: 93.79px;
+  height: 43.93px;
+ 
 }
 
 /* footer */
