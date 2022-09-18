@@ -389,54 +389,30 @@ body {
   flex-wrap: wrap;
   gap: 30px;
   margin-top: 50px;
-  /* align-items: center; */
-}
-
-.coustomers-item,
-.link-customers {
-  display: inline-block;
-  width: 170px;
-  height: 92px;
-  /* background-position: center; */
-  align-items: center;
-  
-}
-.icon-company1 {
-  width: 106px;
-  height: 60px;
-  object-position: 50% 50%;
  
 }
 
-.icon-company2 {
-  width: 106px;
-  height: 60px;
-  object-position: 50% 50%;
+.link-customers  {
+  display: inline-block;
+  width: 170px;
+  height: 92px;
+  background: tomato;
+    
 }
 
-.icon-company3 {
+.icons {
+  margin: 16px 32px;
   width: 106px;
   height: 60px;
-  object-position: 50% 50%;
+  fill:red;
 }
 
-.icon-company4 {
-  width: 106px;
-  height: 60px;
-  object-position: 50% 50%;
-}
 
-.icon-company5 {
-  width: 106px;
-  height: 60px;
-  object-position: 50% 50%;
-}
 
-.icon-company6 {
-  width: 93.79px;
-  height: 43.93px;
-  object-position: 50% 50%;
-}
+/* .site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-text-color);
+} */
 
 /* footer */
 /* Блокова модель footer */
