@@ -252,8 +252,9 @@ body {
   justify-content:center;
   background-color: var(--second-button-color);
   fill: var(--icons-primary-color);
-
+  
 }
+
 /* .item-feature::before {
   display: block;
   content: "";
