@@ -151,7 +151,8 @@ body {
   margin-left: 50px;
 }
 .auth-nav .link {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -185,7 +186,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   max-width: 1600px;
-  height: 600px;
+  /* height: 600px; */
   margin-left: auto;
   margin-right: auto;
   background-size: cover;
@@ -209,7 +210,7 @@ body {
   padding: 10px 32px;
   min-width: 216px;
   border: 0px solid transparent;
-  margin-top: 40px;
+  margin-top: 30px;
 
   color: var(--primary-white-color);
   background-color: var(--primary-button-color);
@@ -385,12 +386,16 @@ body {
   fill: currentColor;
 }
 
-.link-social:hover {
+.link-social:hover,
+.link-social:focus {
   background: var(--accent-text-color);
+  color: #ffffff;
 }
-.icons-social:hover {
-  fill: var(--primary-white-color);
+.icons-social:hover,
+.icons-social:focus {
+  fill: currentColor;
 }
+
 
 /* Постійні клієнти. regular-customers  */
 
@@ -402,7 +407,7 @@ body {
   justify-content: center;
 }
 
-.customers-item {
+.link-customers {
   border: 1px solid var(--icons-primary-color);
   border-radius: 4px;
 }
@@ -415,6 +420,12 @@ body {
   color: var(--icons-primary-color);
 }
 
+.link-customers:hover,
+.link-customers:focus {
+  border: 1px solid var(--accent-text-color);
+  color: var(--accent-text-color);
+}
+
 .icons {
   margin: 16px 32px;
   width: 106px;
@@ -422,13 +433,12 @@ body {
   fill: currentColor;
 }
 
-.icons:hover {
-  fill: var(--accent-text-color);
+.icons:hover,
+.icons:focus {
+  fill: currentColor;
 }
 
-.link-customers:hover {
-  border: 1px solid var(--accent-text-color);
-}
+
 
 /* footer */
 /* Блокова модель footer */
@@ -441,7 +451,7 @@ body {
 .basement-social {
   display: flex;
 
-  align-items: center;
+  align-items:baseline;
   gap: 70px;
 }
 
@@ -527,11 +537,14 @@ body {
   fill: currentColor;
 }
 
-.link-social-footer:hover {
+.link-social-footer:hover,
+.link-social-footer:focus {
   background: var(--accent-text-color);
+  color: #ffffff;
+
 }
-.link-social-footer:hover {
-  fill: var(--primary-white-color);
+.icons-social-footer:hover {
+  fill: currentColor;
 }
 
 /* portfolio */
@@ -549,19 +562,6 @@ body {
   justify-content: center;
   margin-bottom: 50px;
   gap: 8px;
-}
-
-/* Флекс-сітка */
-.project-list .item {
-  display: block;
-  flex-basis: calc(100% / 3 - 30px);
-  margin: 15px; 
-  
-}
-
-.project-list .item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-  0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .button-second {
@@ -585,6 +585,25 @@ body {
   color: var(--primary-white-color);
 }
 
+/* Список проектів */
+/* Флекс-сітка */
+.project-list .item {
+  display: block;
+  flex-basis: calc(100% / 3 - 30px);
+  margin: 15px; 
+  
+}
+
+  
+.project-list .item:hover,
+.project-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+
+
+
 .project-list {
   display: flex;
   flex-wrap: wrap;
@@ -601,7 +620,6 @@ body {
   letter-spacing: 0.06em;
 }
 .project-list .text {
-  /* margin: 0 24px 20px 24px; */
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
@@ -612,6 +630,8 @@ body {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+
+
 }
 .visually-hidden {
   position: absolute;
