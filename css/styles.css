@@ -594,14 +594,24 @@ body {
   
 }
 
-  
-.project-list .item:hover,
+.project-link {
+  display: block;
+  width: 100%;
+  height: auto;
+  text-decoration: none;
+}
+
+.picture {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project-link:hover,
 .project-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
   0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
-
 
 
 .project-list {
@@ -645,6 +655,4 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
-.project-link {
-  text-decoration: none;
-}
+
